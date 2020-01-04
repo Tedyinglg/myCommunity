@@ -14,10 +14,10 @@ public class AutoController {
 
     // GetMapping("/")
 
-    @GetMapping("/greeting1") // correspond to html website
+    @GetMapping("/index") // correspond to html website
     public String greeting(@RequestParam(name="name1", required=false, defaultValue="World") String name, Model model) {
-        model.addAttribute("name2", name); // name2 --> html get value using th: text
-        return "greeting"; // correspond to html file
+        model.addAttribute("name", name); // name2 --> html get value using th: text
+        return "index"; // correspond to html file
     }
 
 /**
@@ -39,3 +39,4 @@ public class AutoController {
 */
 
 }
+
